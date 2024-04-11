@@ -687,3 +687,26 @@ border: 0;
   color: #CC333F;
   transition: .3s, -webkit-mask-size .3s .3s;
 }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #00020386;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #010911;
+}
