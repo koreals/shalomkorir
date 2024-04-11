@@ -17,7 +17,8 @@
     display: none;
   }
   #responsive-nav {
-     z-index: 1000;
+    z-index: 1000;
+   
     display: flex;
   }
   #experience,
@@ -86,7 +87,7 @@
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
-     z-index: 1000;
+    z-index: 1000;
   }
   .section__pic-container {
     width: auto;
