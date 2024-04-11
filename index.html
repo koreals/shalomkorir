@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">home</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="skill.html#projects">Projects</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="responsive-nav">
+      <div class="logo"><a href="index.html">home</a></div>
+      <div class="responsive-menu">
+        <div class="responsive-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skill.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="skill.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <section id="profile">
+          
+       
+            <div class="section__text">
+              <div class="glitch1">
+                <p class="section__text__p1" style="animation: fadeIn 0.5s ease-in forwards; animation-delay: 0.1s;">Hello,I'm</p>
+                <div class="stack" style="--stacks: 3;">
+                  <span style="--index: 0;">Shalom Korir</span>
+                  <span style="--index: 1;">Shalom Korir</span>
+                  <span style="--index: 2;">Shalom Korir</span>
+                </div>
+                <span class="right" style="text-align: center;
+                animation: fadeIn 1.5s ease-in forwards; animation-delay: 0.1s;">A web Developer</span>
+                
+                <div class="btn-container" style="animation: fadeIn 2s ease-in forwards; animation-delay: 0.1s;">
+                  <a href="about.html"  class="about_button">about me</a>
+                  
+                </div>
+              </div>
+             
+              
+                
+              </div>
+            </div>
+              
+              </div>
+            </div>
+            <img
+            src="./assets/arrow.png" style="transform: rotate(180deg);"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='skill.html'"
+          />
+    </section>
+  
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+      <div class="logo" style="animation: fadeIn 0.5s ease-in forwards; animation-delay: 0.1s;"><a href="index.html">home</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">skills</a></li>
+                <li><a href="skill.html#projects">Projects</a></li> 
+               
+          <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="responsive-nav">
+      <div class="logo"><a href="index.html">home</a></div>
+      <div class="responsive-menu">
+        <div class="responsive-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skill.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="skill.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/circle.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              
+             
+            <div class="content">
+              <h1 style="text-align: center;" >Lets get personal</h1>
+              <div class="text-container">
+                  <p>
+                      Hello! I’m Shalom Korir, a 24-year-old web developer based in Nairobi, Kenya. I’m currently pursuing my education at Nazarene University. Here’s a bit more about me:
+                  </p>
+              </div>
+              <button class="button-34" id="moreBtn">More</button>
+              <a href="./assets/vcard.vcf" download class="button-34">Contact Info</a>
+              <a href="./assets/shalom.pdf" download class="button-34">Download Cv</a>
+          </div>
+      
+          <div id="modal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2 style="text-align: center;">More About Me</h2>
+                  <div class="additional-info">
+                      <p >Background and Education</p>
+                      <p>I have a passion for solving problems, which naturally led me to explore the world of coding. Web development allows me to combine creativity and logic to build functional and beautiful digital experiences.</p>
+                      <p>Interests</p>
+                      <p>Photography: Capturing moments through the lens is both an art and a form of storytelling. I love exploring different perspectives and experimenting with composition.</p>
+                      <p>Art: Whether it’s traditional painting, digital design, or mixed media, I find immense joy in expressing myself through art.</p>
+                      <p>Gaming: As a gamer, I appreciate the immersive worlds and intricate gameplay that video games offer. It’s a great way to unwind and challenge my mind.</p>
+                      <p>Building Computers: There’s something satisfying about assembling components, optimizing performance, and creating a personalized machine.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png" style="transform: rotate(-90deg);"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='skill.html'"
+        />
+      </section>
+      <footer>
+        <p style="text-align: center;">koreal &copy; 2024</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">home</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href=#projects>Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="responsive-nav">
+      <div class="logo"><a href="home.html">home</a></div>
+      <div class="responsive-menu">
+        <div class="responsive-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skill.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="skill.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="skills">
+        <p class="section__text__p1">A Glance of  My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/html.png"
+                    alt="html icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/css.png"
+                    alt="css icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/js.png"
+                    alt="JavaScript icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/boot.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Boostrap</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Back-end Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/mongo.png"
+                    alt="MongoDb icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MongoDb</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/sql.png"
+                    alt="sql icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MySqli</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/python.png"
+                    alt="python icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/java.png"
+                    alt="java icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container" onmouseover="this.style.transform='scale(1.09)'" onmouseout="this.style.transform='scale(1)'">
+              <div class="article-container">
+                <img
+                  src="./assets/tom.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Tomorrow technology </h2>
+              <p> Phones and Gadget store </p>
+              <p>HTML JavaScript Css Mysql Php</p>
+              <div class="btn-container">
+               
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://thetomorrowtechnology.co.ke/'"
+                >
+                  View Site
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container" onmouseover="this.style.transform='scale(1.09)'" onmouseout="this.style.transform='scale(1)'">
+              <div class="article-container">
+                <img
+                  src="./assets/minicheps.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Minicheps</h2>
+              <p>Clothing and VisualArt store</p>
+              <p>HTML JavaScript Css Mysql Php</p>
+              <div class="btn-container">
+                
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.minicheps.co.ke/'"
+                >
+                view site
+                </button>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png" style="transform: rotate(-90deg);"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='contact.html'"
+        />
+        
+      </section>
+      <footer>
+        <p style="text-align: center;">koreal &copy; 2024</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>

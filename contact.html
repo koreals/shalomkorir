@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<style>
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #00020386;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #010911;
+}
+</style>
+<body>
+
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">home</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">skill</a></li>
+                <li><a href="skill.html#projects">Projects</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="responsive-nav">
+      <div class="logo"><a href="home.html">home</a></div>
+      <div class="responsive-menu">
+        <div class="responsive-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="skill.html" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="skill.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="contact">
+        <p class="section__text__p1">You can reach out </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:korirshalom@gmail.com">korirshalom@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/tiktok.png"
+              alt="tiktok icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.tiktok.com/@shalomkorir?_t=8lPLlWeRdlW&_r=1">Tiktok</a></p>
+          </div>
+          
+        </div>
+        <div class="glitch">
+          <div class="stack" style="--stacks: 3;text-align:center">
+            <span style="--index: 0;">I can reach out</span>
+            <span style="--index: 1;">I can reach out</span>
+            <span style="--index: 2;">I can reach out</span>
+          </div>
+        </div>
+          <p class="section__text__p1">Please fill out form i'll be in touch </p>
+          <div class="contact-info-upper-container">
+        <form action="https://formspree.io/f/mkndpznj" method="POST" class="contact-form">    
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn"> Send</button>
+        </form> 
+      </div>
+      
+      </section>
+      <footer>
+        <p style="text-align: center;">koreal &copy; 2024</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
